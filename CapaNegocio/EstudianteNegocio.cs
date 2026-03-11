@@ -5,7 +5,6 @@ namespace CapaNegocio
 {
     // Capa negocio para estudiantes
     // Esta clase es la que llama el formulario
-    // Nunca el formulario llama directo a CapaDatos
     public class EstudianteNegocio
     {
         EstudianteDatos datos = new EstudianteDatos();

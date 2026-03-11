@@ -4,29 +4,28 @@ namespace CapaNegocio
     // Es la base para Estudiante
     public abstract class Persona
     {
-        public string Nombre;
-        public string Apellido;
+        public string Nombre { get; set; }
+        public string Apellido { get; set; }
 
-        // Constructor que recibe nombre y apellido
         public Persona(string nombre, string apellido)
         {
             Nombre   = nombre;
             Apellido = apellido;
         }
 
-        // Metodo normal - devuelve nombre completo
+        // para que devuelva nombre completo
         public string NombreCompleto()
         {
             return Nombre + " " + Apellido;
         }
 
-        // Metodo virtual - puede ser sobreescrito por las clases hijas
+        //  este puede ser sobreescrito por las clases hijas
         public virtual string Descripcion()
         {
             return "Persona: " + NombreCompleto();
         }
 
-        // Metodo abstracto - DEBE ser implementado por las clases hijas
+        // para ser implementado por las clases hija
         public abstract string MostrarDatos();
     }
 }

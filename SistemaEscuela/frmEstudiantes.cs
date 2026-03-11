@@ -108,6 +108,8 @@ namespace SistemaEscuela
 
             DataGridViewRow fila = dgvEstudiantes.Rows[e.RowIndex];
 
+            if (fila.Cells["IdEstudiante"].Value == null || fila.Cells["IdEstudiante"].Value == DBNull.Value) return;
+
             idSeleccionado = Convert.ToInt32(fila.Cells["IdEstudiante"].Value);
             txtMatricula.Text = fila.Cells["Matricula"].Value.ToString();
             txtNombre.Text = fila.Cells["Nombre"].Value.ToString();
@@ -121,6 +123,24 @@ namespace SistemaEscuela
             txtNombre.Text = "";
             txtApellido.Text = "";
             txtMatricula.Focus();
+        }
+
+        private void txtMatricula_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar) == false && e.KeyChar != (char)Keys.Back)
+                e.Handled = true;
+        }
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar) == false && e.KeyChar != (char)8 && e.KeyChar != ' ')
+                e.Handled = true;
+        }
+
+        private void txtApellido_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar) == false && e.KeyChar != (char)8 && e.KeyChar != ' ')
+                e.Handled = true;
         }
     }
 }

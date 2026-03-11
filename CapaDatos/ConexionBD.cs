@@ -5,7 +5,7 @@ namespace CapaDatos
     public class ConexionBD
     {
         private SqlConnection Conexion = new SqlConnection(
-            "Server=.;DataBase=SistemaAsistencia;Integrated Security=true");
+            "Server=.;DataBase=EscuelaDB;Integrated Security=true");
 
         public SqlConnection AbrirConexion()
         {

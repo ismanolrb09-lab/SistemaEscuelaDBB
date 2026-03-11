@@ -38,7 +38,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(262, 48);
+            this.label1.Location = new System.Drawing.Point(295, 50);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(148, 13);
             this.label1.TabIndex = 0;
@@ -46,9 +46,9 @@
             // 
             // btnEstudiantes
             // 
-            this.btnEstudiantes.Location = new System.Drawing.Point(68, 176);
+            this.btnEstudiantes.Location = new System.Drawing.Point(289, 112);
             this.btnEstudiantes.Name = "btnEstudiantes";
-            this.btnEstudiantes.Size = new System.Drawing.Size(75, 23);
+            this.btnEstudiantes.Size = new System.Drawing.Size(163, 23);
             this.btnEstudiantes.TabIndex = 1;
             this.btnEstudiantes.Text = "Gestionar Estudiantes";
             this.btnEstudiantes.UseVisualStyleBackColor = true;
@@ -56,9 +56,9 @@
             // 
             // btnAsistencia
             // 
-            this.btnAsistencia.Location = new System.Drawing.Point(293, 176);
+            this.btnAsistencia.Location = new System.Drawing.Point(289, 153);
             this.btnAsistencia.Name = "btnAsistencia";
-            this.btnAsistencia.Size = new System.Drawing.Size(75, 23);
+            this.btnAsistencia.Size = new System.Drawing.Size(163, 23);
             this.btnAsistencia.TabIndex = 2;
             this.btnAsistencia.Text = "Registrar Asistencia";
             this.btnAsistencia.UseVisualStyleBackColor = true;
@@ -66,9 +66,9 @@
             // 
             // btnReportes
             // 
-            this.btnReportes.Location = new System.Drawing.Point(515, 176);
+            this.btnReportes.Location = new System.Drawing.Point(289, 194);
             this.btnReportes.Name = "btnReportes";
-            this.btnReportes.Size = new System.Drawing.Size(75, 23);
+            this.btnReportes.Size = new System.Drawing.Size(164, 23);
             this.btnReportes.TabIndex = 3;
             this.btnReportes.Text = "Ver Reportes";
             this.btnReportes.UseVisualStyleBackColor = true;
@@ -76,7 +76,7 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(293, 332);
+            this.btnSalir.Location = new System.Drawing.Point(328, 235);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 4;

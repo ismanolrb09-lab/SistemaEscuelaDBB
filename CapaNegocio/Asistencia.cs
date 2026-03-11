@@ -26,7 +26,7 @@ namespace CapaNegocio
             return true;
         }
 
-        //         // Esto es un metodo como funcion para verificar alerta de inasistencia
+        // Esto es un metodo como funcion para verificar alerta de inasistencia
 
         public bool VerificarAlerta(int totalClases, int asistencias)
         {
@@ -41,7 +41,7 @@ namespace CapaNegocio
                 return false;
         }
 
-        // Metodo funcion - calcula el porcentaje de asistencia
+        // metodo funcion q calcula el porcentaje de asistencia
         public double CalcularPorcentaje(int totalClases, int asistencias)
         {
             if (totalClases == 0)

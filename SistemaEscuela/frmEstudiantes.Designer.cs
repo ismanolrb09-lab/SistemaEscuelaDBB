@@ -51,7 +51,7 @@ namespace SistemaEscuela
             // lblMatricula
             // 
             this.lblMatricula.AutoSize = true;
-            this.lblMatricula.Location = new System.Drawing.Point(27, 44);
+            this.lblMatricula.Location = new System.Drawing.Point(30, 44);
             this.lblMatricula.Name = "lblMatricula";
             this.lblMatricula.Size = new System.Drawing.Size(53, 13);
             this.lblMatricula.TabIndex = 0;
@@ -69,7 +69,7 @@ namespace SistemaEscuela
             // lblApellido
             // 
             this.lblApellido.AutoSize = true;
-            this.lblApellido.Location = new System.Drawing.Point(30, 144);
+            this.lblApellido.Location = new System.Drawing.Point(30, 137);
             this.lblApellido.Name = "lblApellido";
             this.lblApellido.Size = new System.Drawing.Size(47, 13);
             this.lblApellido.TabIndex = 2;
@@ -78,7 +78,7 @@ namespace SistemaEscuela
             // lblCurso
             // 
             this.lblCurso.AutoSize = true;
-            this.lblCurso.Location = new System.Drawing.Point(30, 191);
+            this.lblCurso.Location = new System.Drawing.Point(30, 182);
             this.lblCurso.Name = "lblCurso";
             this.lblCurso.Size = new System.Drawing.Size(37, 13);
             this.lblCurso.TabIndex = 3;
@@ -87,7 +87,7 @@ namespace SistemaEscuela
             // lblSeccion
             // 
             this.lblSeccion.AutoSize = true;
-            this.lblSeccion.Location = new System.Drawing.Point(30, 232);
+            this.lblSeccion.Location = new System.Drawing.Point(30, 227);
             this.lblSeccion.Name = "lblSeccion";
             this.lblSeccion.Size = new System.Drawing.Size(49, 13);
             this.lblSeccion.TabIndex = 4;
@@ -95,24 +95,27 @@ namespace SistemaEscuela
             // 
             // txtMatricula
             // 
-            this.txtMatricula.Location = new System.Drawing.Point(101, 44);
+            this.txtMatricula.Location = new System.Drawing.Point(112, 44);
             this.txtMatricula.Name = "txtMatricula";
             this.txtMatricula.Size = new System.Drawing.Size(100, 20);
             this.txtMatricula.TabIndex = 5;
+            this.txtMatricula.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMatricula_KeyPress);
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(101, 95);
+            this.txtNombre.Location = new System.Drawing.Point(112, 95);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
             this.txtNombre.TabIndex = 6;
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(101, 136);
+            this.txtApellido.Location = new System.Drawing.Point(112, 137);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(100, 20);
             this.txtApellido.TabIndex = 7;
+            this.txtApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellido_KeyPress);
             // 
             // cboCurso
             // 
@@ -126,7 +129,7 @@ namespace SistemaEscuela
             // cboSeccion
             // 
             this.cboSeccion.FormattingEnabled = true;
-            this.cboSeccion.Location = new System.Drawing.Point(101, 232);
+            this.cboSeccion.Location = new System.Drawing.Point(101, 224);
             this.cboSeccion.Name = "cboSeccion";
             this.cboSeccion.Size = new System.Drawing.Size(121, 21);
             this.cboSeccion.TabIndex = 9;
@@ -153,7 +156,7 @@ namespace SistemaEscuela
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(73, 321);
+            this.btnNuevo.Location = new System.Drawing.Point(101, 294);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(75, 23);
             this.btnNuevo.TabIndex = 12;
@@ -166,9 +169,11 @@ namespace SistemaEscuela
             this.dgvEstudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEstudiantes.Location = new System.Drawing.Point(288, 12);
             this.dgvEstudiantes.Name = "dgvEstudiantes";
+            this.dgvEstudiantes.ReadOnly = true;
+            this.dgvEstudiantes.RowHeadersWidth = 51;
             this.dgvEstudiantes.Size = new System.Drawing.Size(500, 332);
             this.dgvEstudiantes.TabIndex = 13;
-            this.dgvEstudiantes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEstudiantes_CellContentClick);
+            this.dgvEstudiantes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEstudiantes_CellClick);
             // 
             // frmEstudiantes
             // 

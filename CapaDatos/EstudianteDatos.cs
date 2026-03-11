@@ -7,7 +7,7 @@ namespace CapaDatos
     {
         ConexionBD con = new ConexionBD();
 
-        // Obtiene todos los estudiantes con curso y seccion
+        // para poder tener todos los estudiantes con curso y seccion
         public DataTable ObtenerEstudiantes()
         {
             DataTable dt = new DataTable();
@@ -30,7 +30,7 @@ namespace CapaDatos
             return dt;
         }
 
-        // Obtiene todos los cursos para el ComboBox
+        // toma los cursos para el ComboBox
         public DataTable ObtenerCursos()
         {
             DataTable dt = new DataTable();
