@@ -2,14 +2,14 @@ using System;
 
 namespace CapaNegocio
 {
-    // Clase que representa un registro de asistencia
+    // Clase para los  registro de asistencia
     public class Asistencia
     {
-        public int      IdEstudiante;
-        public DateTime Fecha;
-        public bool     Presente;
+        public int IdEstudiante { get; set; }
+        public DateTime Fecha { get; set; }
+        public bool Presente { get; set; }
 
-        // Constructor
+   
         public Asistencia(int idEstudiante, DateTime fecha, bool presente)
         {
             IdEstudiante = idEstudiante;
@@ -17,7 +17,7 @@ namespace CapaNegocio
             Presente     = presente;
         }
 
-        // Metodo funcion - verifica si el registro es valido
+        // metodo como funcion para saber si el registro el valido "por ahor no explota"
         public bool EsValido()
         {
             if (IdEstudiante == 0)
@@ -26,7 +26,8 @@ namespace CapaNegocio
             return true;
         }
 
-        // Metodo funcion - verifica si hay alerta de inasistencia
+        //         // Esto es un metodo como funcion para verificar alerta de inasistencia
+
         public bool VerificarAlerta(int totalClases, int asistencias)
         {
             if (totalClases == 0)
