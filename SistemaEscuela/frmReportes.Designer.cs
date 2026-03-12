@@ -38,7 +38,7 @@
             // btnRanking
             // 
             this.btnRanking.Location = new System.Drawing.Point(40, 102);
-            this.btnRanking.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRanking.Margin = new System.Windows.Forms.Padding(2);
             this.btnRanking.Name = "btnRanking";
             this.btnRanking.Size = new System.Drawing.Size(180, 19);
             this.btnRanking.TabIndex = 0;
@@ -49,7 +49,7 @@
             // btnAlertas
             // 
             this.btnAlertas.Location = new System.Drawing.Point(62, 135);
-            this.btnAlertas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAlertas.Margin = new System.Windows.Forms.Padding(2);
             this.btnAlertas.Name = "btnAlertas";
             this.btnAlertas.Size = new System.Drawing.Size(131, 19);
             this.btnAlertas.TabIndex = 1;
@@ -70,7 +70,7 @@
             // 
             this.dgvReporte.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvReporte.Location = new System.Drawing.Point(260, 24);
-            this.dgvReporte.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvReporte.Margin = new System.Windows.Forms.Padding(2);
             this.dgvReporte.Name = "dgvReporte";
             this.dgvReporte.RowHeadersWidth = 51;
             this.dgvReporte.RowTemplate.Height = 24;
@@ -81,12 +81,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Lime;
             this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.dgvReporte);
             this.Controls.Add(this.lblInfo);
             this.Controls.Add(this.btnAlertas);
             this.Controls.Add(this.btnRanking);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmReportes";
             this.Text = "frmReportes";
             this.Load += new System.EventHandler(this.frmReportes_Load);
