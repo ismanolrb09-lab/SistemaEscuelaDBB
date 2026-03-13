@@ -35,7 +35,7 @@ namespace CapaNegocio
         // Metodo funcion para valida los datos antes de guardar
         public string Validar()
         {
-            if (Matricula == null || Matricula.Trim() == "")
+            if (Matricula == null || Matricula == "")
                 return "La matricula es obligatoria.";
 
             if (Nombre == null || Nombre.Trim() == "")
