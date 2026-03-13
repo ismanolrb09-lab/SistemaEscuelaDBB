@@ -30,7 +30,6 @@ namespace CapaDatos
             return dt;
         }
 
-        // toma los cursos para el ComboBox
         public DataTable ObtenerCursos()
         {
             DataTable dt = new DataTable();
@@ -53,7 +52,6 @@ namespace CapaDatos
             return dt;
         }
 
-        // Obtiene secciones por curso para el ComboBox
         public DataTable ObtenerSecciones(int idCurso)
         {
             DataTable dt = new DataTable();
@@ -77,7 +75,6 @@ namespace CapaDatos
             return dt;
         }
 
-        // Obtiene estudiantes por seccion para el ComboBox de asistencia
         public DataTable ObtenerEstudiantesPorSeccion(int idSeccion)
         {
             DataTable dt = new DataTable();

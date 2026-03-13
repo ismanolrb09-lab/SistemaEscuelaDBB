@@ -7,13 +7,12 @@ namespace CapaNegocio
     {
         ReporteDatos datos = new ReporteDatos();
 
-        // para coje el ranking de inasistencias
         public DataTable ObtenerRankingInasistencia()
         {
             return datos.RankingInasistencia();
         }
 
-        // Obtiene estudiantes con asistencia menor al 80%
+        //menor al 80%
         public DataTable ObtenerAlertas()
         {
             return datos.AlertaAsistencia();

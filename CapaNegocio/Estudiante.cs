@@ -9,9 +9,10 @@ namespace CapaNegocio
 
         //nose como resolverlo, pero no da error critico
         public Estudiante(string matricula, string nombre, string apellido)
-            
         {
             Matricula = matricula;
+            Nombre = nombre;
+            Apellido = apellido;
         }
 
         // Override del metodo abstracto para que sea obligatorio implementarlo
@@ -26,13 +27,13 @@ namespace CapaNegocio
             return "Estudiante: " + MostrarDatos();
         }
 
-        // Metodo virtual propiopara modificar 
+        // para modificar 
         public virtual string ObtenerMatricula()
         {
             return Matricula;
         }
 
-        // Metodo funcion para valida los datos antes de guardar
+        //validacion 
         public string Validar()
         {
             if (Matricula == null || Matricula == "")

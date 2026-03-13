@@ -3,8 +3,6 @@ using System.Data;
 
 namespace CapaNegocio
 {
-    // Capa negocio para estudiantes
-    // Esta clase es la que llama el formulario
     public class EstudianteNegocio
     {
         EstudianteDatos datos = new EstudianteDatos();
@@ -21,13 +19,13 @@ namespace CapaNegocio
             return datos.ObtenerCursos();
         }
 
-        // Obtiene secciones por curso para el ComboBox
+        // 2
         public DataTable ObtenerSecciones(int idCurso)
         {
             return datos.ObtenerSecciones(idCurso);
         }
 
-        // Obtiene estudiantes por seccion para el ComboBox de asistencia
+        // 3
         public DataTable ObtenerEstudiantesPorSeccion(int idSeccion)
         {
             return datos.ObtenerEstudiantesPorSeccion(idSeccion);
@@ -48,7 +46,8 @@ namespace CapaNegocio
             return "";
         }
 
-        // Edita un estudiante existente con validacion
+
+        // Edita un estudiante existente
         public string EditarEstudiante(int idEstudiante, string matricula, string nombre, string apellido, int idSeccion)
         {
             Estudiante est = new Estudiante(matricula, nombre, apellido);
@@ -63,7 +62,8 @@ namespace CapaNegocio
             return "";
         }
 
-        // Elimina un estudiante
+
+
         public void EliminarEstudiante(int idEstudiante)
         {
             datos.Eliminar(idEstudiante);

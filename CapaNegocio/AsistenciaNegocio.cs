@@ -3,12 +3,11 @@ using System;
 
 namespace CapaNegocio
 {
-    // Capa negocio para asistencia
     public class AsistenciaNegocio
     {
         AsistenciaDatos datos = new AsistenciaDatos();
 
-        // Registra la asistencia de un estudiante
+        // Registra
         public string GuardarAsistencia(int idEstudiante, DateTime fecha, bool presente)
         {
             Asistencia a = new Asistencia(idEstudiante, fecha, presente);
@@ -20,14 +19,14 @@ namespace CapaNegocio
             return "";
         }
 
-        // Metodo funcion - verifica si hay alerta de inasistencia
+        // Metodo funcion (verifica si hay alerta de inasistencia
         public bool VerificarAlerta(int totalClases, int asistencias)
         {
             Asistencia a = new Asistencia(0, DateTime.Today, false);
             return a.VerificarAlerta(totalClases, asistencias);
         }
 
-        // Metodo funcion - calcula porcentaje
+        // calculo de procentaje en funcion
         public double CalcularPorcentaje(int totalClases, int asistencias)
         {
             Asistencia a = new Asistencia(0, DateTime.Today, false);

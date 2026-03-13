@@ -7,7 +7,7 @@ namespace CapaDatos
     {
         ConexionBD con = new ConexionBD();
 
-        // Obtiene el ranking de inasistencias
+        // Obtiene
         public DataTable RankingInasistencia()
         {
             DataTable dt = new DataTable();
@@ -30,7 +30,7 @@ namespace CapaDatos
             return dt;
         }
 
-        // Obtiene estudiantes con asistencia menor al 80%
+        // Obtiene estudiantes menor al 80%
         public DataTable AlertaAsistencia()
         {
             DataTable dt = new DataTable();

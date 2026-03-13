@@ -7,7 +7,7 @@ namespace CapaDatos
     {
         ConexionBD con = new ConexionBD();
 
-        // Registra o actualiza la asistencia de un estudiante
+        // Registra o actualiza
         public void RegistrarAsistencia(int idEstudiante, System.DateTime fecha, bool presente)
         {
             try

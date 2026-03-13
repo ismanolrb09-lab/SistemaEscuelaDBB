@@ -2,7 +2,6 @@ using System;
 
 namespace CapaNegocio
 {
-    // Clase para los  registro de asistencia
     public class Asistencia
     {
         public int IdEstudiante { get; set; }
@@ -26,7 +25,7 @@ namespace CapaNegocio
             return true;
         }
 
-        // Esto es un metodo como funcion para verificar alerta de inasistencia
+        // funcion para verificar alerta de inasistencia
 
         public bool VerificarAlerta(int totalClases, int asistencias)
         {
@@ -41,7 +40,7 @@ namespace CapaNegocio
                 return false;
         }
 
-        // metodo funcion q calcula el porcentaje de asistencia
+        //  funcion q calcula el porcentaje de asistencia
         public double CalcularPorcentaje(int totalClases, int asistencias)
         {
             if (totalClases == 0)

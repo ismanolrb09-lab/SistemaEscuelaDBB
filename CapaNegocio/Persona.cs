@@ -1,7 +1,6 @@
 namespace CapaNegocio
 {
-    // Clase abstracta - no se puede instanciar directamente
-    // Es la base para Estudiante
+   
     public abstract class Persona
     {
         public string Nombre { get; set; }
@@ -12,8 +11,9 @@ namespace CapaNegocio
             Nombre   = nombre;
             Apellido = apellido;
         }
-
-        // para que devuelva nombre completo
+        public Persona()
+        {
+        }
         public string NombreCompleto()
         {
             return Nombre + " " + Apellido;
@@ -25,7 +25,7 @@ namespace CapaNegocio
             return "Persona: " + NombreCompleto();
         }
 
-        // para ser implementado por las clases hija
+        // debe implementado por hija
         public abstract string MostrarDatos();
     }
 }
