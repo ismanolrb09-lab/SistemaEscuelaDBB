@@ -77,7 +77,13 @@ namespace SistemaEscuela
                 return;
             }
 
-            string estado = presente == true ? "Presente" : "Ausente";
+            string estado = "";
+
+            if (presente == true)
+                estado = "Presente";
+            else
+                estado = "Ausente";
+
             MessageBox.Show("Asistencia registrada: " + estado);
         }
     }

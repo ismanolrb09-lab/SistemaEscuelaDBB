@@ -38,10 +38,10 @@ namespace CapaNegocio
             if (Matricula == null || Matricula == "")
                 return "La matricula es obligatoria.";
 
-            if (Nombre == null || Nombre.Trim() == "")
+            if (Nombre == null || Nombre == "")
                 return "El nombre es obligatorio.";
 
-            if (Apellido == null || Apellido.Trim() == "")
+            if (Apellido == null || Apellido == "")
                 return "El apellido es obligatorio.";
 
             if (IdSeccion == 0)
