@@ -86,5 +86,23 @@ namespace SistemaEscuela
 
             MessageBox.Show("Asistencia registrada: " + estado);
         }
+
+        private void cboCurso_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar) == false && e.KeyChar != (char)8 && e.KeyChar != ' ')
+                e.Handled = true;
+        }
+
+        private void cboSeccion_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar) == false && e.KeyChar != (char)8 && e.KeyChar != ' ')
+                e.Handled = true;
+        }
+
+        private void cboEstudiante_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar) == false && e.KeyChar != (char)8 && e.KeyChar != ' ')
+                e.Handled = true;
+        }
     }
 }

@@ -25,7 +25,6 @@ namespace CapaNegocio
             return "Persona: " + NombreCompleto();
         }
 
-        // debe implementado por hija
         public abstract string MostrarDatos();
     }
 }

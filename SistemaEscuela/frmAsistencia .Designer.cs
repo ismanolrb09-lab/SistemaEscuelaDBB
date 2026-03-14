@@ -96,6 +96,7 @@
             this.cboCurso.Size = new System.Drawing.Size(100, 21);
             this.cboCurso.TabIndex = 5;
             this.cboCurso.SelectedIndexChanged += new System.EventHandler(this.cboCurso_SelectedIndexChanged);
+            this.cboCurso.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cboCurso_KeyPress);
             // 
             // cboSeccion
             // 
@@ -107,6 +108,7 @@
             this.cboSeccion.Size = new System.Drawing.Size(92, 21);
             this.cboSeccion.TabIndex = 6;
             this.cboSeccion.SelectedIndexChanged += new System.EventHandler(this.cboSeccion_SelectedIndexChanged);
+            this.cboSeccion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cboSeccion_KeyPress);
             // 
             // cboEstudiante
             // 
@@ -118,6 +120,7 @@
             this.cboEstudiante.Name = "cboEstudiante";
             this.cboEstudiante.Size = new System.Drawing.Size(92, 21);
             this.cboEstudiante.TabIndex = 7;
+            this.cboEstudiante.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cboEstudiante_KeyPress);
             // 
             // dtpFecha
             // 
